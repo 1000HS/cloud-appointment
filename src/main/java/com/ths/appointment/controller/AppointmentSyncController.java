@@ -29,9 +29,9 @@ public class AppointmentSyncController {
 
 	// get appoitnmentSync by id
 	@GetMapping("/{patient_appointment_id}")
-	    public AppointmentSync getAppointmentById(@PathVariable(value = "patient_appointment_id") Long appointmentId) {
-	        return this.appointmentSyncService.getAppointmentSyncById(appointmentId);
-	    }
+	public AppointmentSync getAppointmentById(@PathVariable(value = "patient_appointment_id") Long appointmentId) {
+		return this.appointmentSyncService.getAppointmentSyncById(appointmentId);
+	}
 
 	// create appointment
 	@PostMapping
